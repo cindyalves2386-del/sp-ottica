@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SP Óttica: cultura que inspira, estilo que transforma todos os olhares.">
+    <meta name="keywords" content="ótica, óculos, óculos de grau, óculos solar, SP Óttica">
+    <meta name="author" content="SP Óttica">
+    <title>SP Óttica | Início</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho e menu -->
+    <header class="cabecalho">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">SP Óttica</a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <a class="ativo" href="index.html">Início</a>
+                <a href="grau.html">Óculos de Grau</a>
+                <a href="solar.html">Óculos Solar</a>
+                <a href="contato.html">Contato</a>
+                <a href="carrinho.html">Carrinho <span id="contador-carrinho">0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Banner principal -->
+        <section class="hero">
+            <div class="container hero-conteudo">
+                <h1>SP Óttica</h1>
+                <p>Novo olhar para sua visão.</p>
+                <a class="botao botao-claro" href="#categorias">Ver coleção</a>
+            </div>
+        </section>
+
+        <!-- Sobre a ótica -->
+        <section class="secao sobre" id="sobre">
+            <div class="container texto-largura">
+                <p class="etiqueta">Sobre</p>
+                <h2>SP Óttica </h2>
+                <p>
+                    Cultura que inspira, estilo que transforma todos os olhares.
+                </p>
+            </div>
+        </section>
+
+        <!-- Categorias com imagens da mulher e do homem -->
+        <section class="secao categorias" id="categorias">
+            <div class="container">
+                <p class="etiqueta">Categorias</p>
+                <h2>Coleção Tupi Guarani</h2>
+
+                <div class="grid-categorias">
+                    <article class="categoria-card">
+                        <img src="img/categoria-grau.png" alt="Mulher usando óculos de grau da coleção Tupi Guarani">
+                        <div>
+                            <h3>Óculos Grau</h3>
+                            <p>Essência da nossa tribo, visão urbana.</p>
+                            <a href="grau.html">Ver modelos</a>
+                        </div>
+                    </article>
+
+                    <article class="categoria-card">
+                        <img src="img/categoria-solar.png" alt="Homem usando óculos solar da coleção Tupi Guarani">
+                        <div>
+                            <h3>Óculos Solar</h3>
+                            <p>O sol encontra sua essência, com brilho ancestral</p>
+                            <a href="solar.html">Ver modelos</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos em destaque -->
+        <section class="secao destaques">
+            <div class="container">
+                <p class="etiqueta">Destaques</p>
+                <h2>Favoritos da SP Óttica</h2>
+
+                <div class="produtos-grid">
+                    <article class="produto-card">
+                        <img src="img/araci.grau.png" alt="Óculos de grau Araci transparente">
+                        <h3>Araci</h3>
+                        <p class="preco">R$ 279,90</p>
+                        <button class="botao btn-carrinho" data-nome="Araci" data-preco="279.90">Adicionar ao carrinho</button>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="img/aimbere.sol.png" alt="Óculos solar Aimberê tartaruga">
+                        <h3>Aimberê</h3>
+                        <p class="preco">R$ 249,90</p>
+                        <button class="botao btn-carrinho" data-nome="Aimberê" data-preco="249.90">Adicionar ao carrinho</button>
+                    </article>
+                </div>
+
+                <p class="mensagem" id="mensagem-carrinho"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>SP Óttica. Cindy S. Alves.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

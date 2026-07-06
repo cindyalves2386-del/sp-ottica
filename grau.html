@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" SP Óttica: cultura que inspira, estilo que transforma todos os olhares.">
+    <meta name="keywords" content="óculos de grau, ótica, SP Óttica">
+    <meta name="author" content="SP Óttica">
+    <title>SP Óttica | Óculos de Grau</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho e menu -->
+    <header class="cabecalho">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">SP Óttica</a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <a href="index.html">Início</a>
+                <a class="ativo" href="grau.html">Óculos de Grau</a>
+                <a href="solar.html">Óculos Solar</a>
+                <a href="contato.html">Contato</a>
+                <a href="carrinho.html">Carrinho <span id="contador-carrinho">0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Título da página -->
+        <section class="titulo-pagina">
+            <div class="container">
+                <p class="etiqueta">Coleção Tupi Guarani</p>
+                <h1>Grau Origens</h1>
+                <p>Essência da nossa tribo, força do asfalto.</p>
+            </div>
+        </section>
+
+        <!-- Produtos de grau -->
+        <section class="secao">
+            <div class="container">
+                <div class="produtos-grid">
+                    <article class="produto-card">
+                        <img src="./img/araci.grau.png" alt="Óculos de grau Araci transparente">
+                        <h2>Araci</h2>
+                        <p class="preco">R$ 279,90</p>
+                        <button class="botao btn-carrinho" data-nome="Araci" data-preco="279.90">Adicionar ao carrinho</button>
+                    </article>
+
+                    <article class="produto-card">
+                        <img src="img/yara.grau.png" alt="Óculos de grau Yara tartaruga">
+                        <h2>Yara</h2>
+                        <p class="preco">R$ 299,90</p>
+                        <button class="botao btn-carrinho" data-nome="Yara" data-preco="299.90">Adicionar ao carrinho</button>
+                    </article>
+                </div>
+
+                <p class="mensagem" id="mensagem-carrinho"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>SP Óttica. Cindy S. Alves.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrinho de compras simples da SP Óttica com quantidade, total e forma de pagamento.">
+    <meta name="keywords" content="carrinho, compras, ótica, óculos, SP Óttica">
+    <meta name="author" content="SP Óttica">
+    <title>SP Óttica | Carrinho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">SP Óttica</a>
+
+            <button class="menu-botao" id="menu-botao" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="menu" id="menu">
+                <a href="index.html">Início</a>
+                <a href="grau.html">Óculos de Grau</a>
+                <a href="solar.html">Óculos Solar</a>
+                <a href="contato.html">Contato</a>
+                <a class="ativo" href="carrinho.html">Carrinho <span id="contador-carrinho">0</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="titulo-pagina">
+            <div class="container">
+                <p class="etiqueta">Compra</p>
+                <h1>Carrinho</h1>
+                <p>Confira os itens adicionados e escolha a forma de pagamento.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="container carrinho-layout">
+                <div class="carrinho-lista" id="lista-carrinho"></div>
+
+                <aside class="resumo-carrinho">
+                    <h2>Resumo</h2>
+                    <p>Quantidade: <strong id="quantidade-total">0</strong></p>
+                    <p>Valor total: <strong id="valor-total">R$ 0,00</strong></p>
+
+                    <form class="pagamento">
+                        <h3>Forma de pagamento</h3>
+
+                        <label>
+                            <input type="radio" name="pagamento" value="PIX" checked>
+                            PIX
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" value="Cartão">
+                            Cartão
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pagamento" value="Boleto">
+                            Boleto
+                        </label>
+                    </form>
+
+                    <button class="botao" id="finalizar-compra" type="button">Finalizar compra</button>
+                    <button class="botao botao-secundario" id="limpar-carrinho" type="button">Limpar carrinho</button>
+                    <p class="mensagem" id="mensagem-carrinho"></p>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>SP Óttica. Cindy S. Alves.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>S
+</html>
